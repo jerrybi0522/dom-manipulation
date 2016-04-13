@@ -26,5 +26,14 @@ $(document).ready(function(){
    	};
    });
 
+   $(document).keypress(function(e){
+      if (e.keyCode >= 48 && e.keyCode <= 57){
+         $("#text").text("Number");
+      } else if (e.keyCode >= 58 && e.keyCode <= 122){
+         $("#text").text("Letter");
+      } else{
+         $("#text").text("");
+      }
+   });
    
 });
